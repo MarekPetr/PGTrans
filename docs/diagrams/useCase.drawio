@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2020-09-01T15:28:55.223Z" agent="5.0 (X11)" etag="1oXHtFcvuEHPf5ziKZgA" version="13.6.6" type="github">
+  <diagram id="pg9LOeA0hvmknP6vPmzA" name="Page-1">
+    <mxGraphModel dx="1422" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-1" target="MG0_C1tYOZTHfNqZeiAg-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-1" target="tAJA87hCk-QoFF_-p-i4-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-1" target="tAJA87hCk-QoFF_-p-i4-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-1" target="MG0_C1tYOZTHfNqZeiAg-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAJA87hCk-QoFF_-p-i4-1" value="Vývozce" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="480" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="tAJA87hCk-QoFF_-p-i4-2" target="tAJA87hCk-QoFF_-p-i4-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-2" target="MG0_C1tYOZTHfNqZeiAg-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-2" target="tAJA87hCk-QoFF_-p-i4-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tAJA87hCk-QoFF_-p-i4-2" target="MG0_C1tYOZTHfNqZeiAg-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAJA87hCk-QoFF_-p-i4-2" value="Pasažér" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="165" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tAJA87hCk-QoFF_-p-i4-3" value="Nabídnout vývoz" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="430" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tAJA87hCk-QoFF_-p-i4-5" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tAJA87hCk-QoFF_-p-i4-6" value="Rezervovat vývoz" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="210" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-4" value="Registrace" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-9" value="Požádat o nabídku vývozu" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MG0_C1tYOZTHfNqZeiAg-13" value="Potvrdit vývoz" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="540" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
