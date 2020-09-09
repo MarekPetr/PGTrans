@@ -1,55 +1,61 @@
 {% extends "rides_offered/base.html" %}
 {% block content %}
     {% for ride in rides %}
-        <article class="media content-section">
-            <div class="media-body">
-                <div class="article-metadata">
-                    <a class="mr-2" href="#">{{ ride.driver }}</a>
-                    <small class="text-muted">{{ ride.date }}</small>
+        <div class="col-auto">
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="#">{{ ride.driver }}</a>
+                        <small class="text-muted">{{ ride.date }}</small>
+                    </div>
+                    <h2><a class="article-title" href="#">{{ ride.dest }}</a></h2>
+                    <p class="article-content">cena: {{ ride.cost }}</p>
                 </div>
-                <h2><a class="article-title" href="#">{{ ride.dest }}</a></h2>
-                <p class="article-content">cena: {{ ride.cost }}</p>
-            </div>
-        </article>
-    {% endfor %}
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="bootstrap-iso">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-
-                    <!-- Form code begins -->
-                    <form method="post">
-                        <div class="form-group">
-                            <!-- Date input -->
-                            <label class="control-label" for="date">Date</label>
-                            <input class="form-control"
-                                   id="date"
-                                   name="date"
-                                   placeholder="MM/DD/YYY"
-                                   type="text"/>
-                        </div>
-                        <div class="form-group">
-                            <!-- Submit button -->
-                            <button class="btn btn-primary"
-                                    name="submit"
-                                    type="submit">
-                                Submit</button>
-                        </div>
-                    </form>
-                    <!-- Form code ends -->
-                </div>
-            </div>
+            </article>
         </div>
+    {% endfor %}
+    <div class="col-auto">
+        <form>
+            <div class="form-group row">
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
+                <div class='col-sm-7'>
+                    <div class='input-group date' id='datepicker'>
+                        <div>
+                            <input type='text' class="form-control" placeholder="DD:MM:YYYY" readonly />
+                        </div>
+
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Čas odjezdu:</label>
+                <div class='col-sm-7'>
+                    <div class='input-group time' id='timepicker'>
+                        <div>
+                            <input type='text' class="form-control" placeholder="HH:MM" readonly />
+                        </div>
+
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputCords1" class="col-sm-5 col-form-label">Souřadnice místa odjezdu:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="Souřadnice">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputCords2" class="col-sm-5 col-form-label">Souřadnice destinace:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="Souřadnice">
+                </div>
+            </div>
+        </form>
     </div>
-</div>
 {% endblock content %}
