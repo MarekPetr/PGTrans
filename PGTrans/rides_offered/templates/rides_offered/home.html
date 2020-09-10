@@ -19,31 +19,28 @@
             <div class="form-group row">
                 <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
                 <div class='col-sm-7'>
-                    <div class='input-group date' id='datepicker'>
-                        <div>
-                            <input type='text' class="form-control" placeholder="DD:MM:YYYY" readonly />
+                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                         </div>
-
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
                     </div>
                 </div>
             </div>
+
             <div class="form-group row">
-                <label for="inputDateTime" class="col-sm-5 col-form-label">Čas odjezdu:</label>
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
                 <div class='col-sm-7'>
-                    <div class='input-group time' id='timepicker'>
-                        <div>
-                            <input type='text' class="form-control" placeholder="HH:MM" readonly />
+                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
                         </div>
-
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
                     </div>
                 </div>
             </div>
+
+
             <div class="form-group row">
                 <label for="inputCords1" class="col-sm-5 col-form-label">Souřadnice místa odjezdu:</label>
                 <div class="col-sm-7">
