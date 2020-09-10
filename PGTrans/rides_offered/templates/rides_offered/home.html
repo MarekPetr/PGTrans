@@ -1,15 +1,92 @@
 {% extends "rides_offered/base.html" %}
 {% block content %}
-    {% for ride in rides %}
-        <article class="media content-section">
-            <div class="media-body">
-                <div class="article-metadata">
-                    <a class="mr-2" href="#">{{ ride.driver }}</a>
-                    <small class="text-muted">{{ ride.date }}</small>
+	
+    <div class="col-auto">
+        <form class="mb-3">
+            <div class="form-group row">
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
+                <div class='col-sm-7'>
+                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
                 </div>
-                <h2><a class="article-title" href="#">{{ ride.dest}}</a></h2>
-                <p class="article-content">cena: {{ ride.cost }}</p>
             </div>
-        </article>
-    {% endfor %}
+
+            <div class="form-group row">
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Čas odjezdu:</label>
+                <div class='col-sm-7'>
+                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputCords1" class="col-sm-5 col-form-label">Místo odjezdu:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputCords1">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputCords2" class="col-sm-5 col-form-label">Destinace:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputCords2">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputCost" class="col-sm-5 col-form-label">Cena/os:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputCost">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputCar" class="col-sm-5 col-form-label">Auto:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputCar">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success float-right" value="Přidat">
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 {% endblock content %}
