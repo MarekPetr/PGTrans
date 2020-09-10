@@ -1,8 +1,8 @@
 {% extends "rides_offered/base.html" %}
 {% block content %}
-
+	
     <div class="col-auto">
-        <form>
+        <form class="mb-3">
             <div class="form-group row">
                 <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
                 <div class='col-sm-7'>
@@ -28,14 +28,14 @@
             </div>
 
             <div class="form-group row">
-                <label for="inputCords1" class="col-sm-5 col-form-label">Souřadnice místa odjezdu:</label>
+                <label for="inputCords1" class="col-sm-5 col-form-label">Místo odjezdu:</label>
                 <div class="col-sm-7">
                     <input type="text" class="form-control" id="inputCords1">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputCords2" class="col-sm-5 col-form-label">Souřadnice destinace:</label>
+                <label for="inputCords2" class="col-sm-5 col-form-label">Destinace:</label>
                 <div class="col-sm-7">
                     <input type="text" class="form-control" id="inputCords2">
                 </div>
@@ -58,12 +58,6 @@
                 </div>
             </div>
         </form>
-
-        <div class="mb-4">
-            <h6 class="text-uppercase">Moje vývozy</h6>
-            <!-- Solid divider -->
-            <hr class="solid">
-        </div>
 
         <table class="table table-hover table-striped">
             <thead>
