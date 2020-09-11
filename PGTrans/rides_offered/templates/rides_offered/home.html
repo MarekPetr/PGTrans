@@ -1,27 +1,18 @@
 {% extends "rides_offered/base.html" %}
 {% block content %}
-	
-    <div class="col-auto">
-        <form class="mb-3">
+	<div class="col">
+			<div class="row mb-3">
+				<input type="button" class="btn btn-primary float-left" id="toggleFormBtn" value="Nový vývoz" onclick="toggleOfferForm()">
+			</div>
+		</div>
+        <form class="col-sm-7 mb-3" id="offer-form" style="display: none">
             <div class="form-group row">
-                <label for="inputDateTime" class="col-sm-5 col-form-label">Datum odjezdu:</label>
+                <label for="inputDateTime" class="col-sm-5 col-form-label">Datum a čas odjezdu:</label>
                 <div class='col-sm-7'>
-                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
-                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="DD.MM.YYYY" />
+                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="inputDateTime" class="col-sm-5 col-form-label">Čas odjezdu:</label>
-                <div class='col-sm-7'>
-                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
-                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
                         </div>
                     </div>
                 </div>
@@ -41,9 +32,15 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputCost" class="col-sm-5 col-form-label">Cena/os:</label>
+                <label for="inputCost" class="col-sm-5 col-form-label">Počet míst:</label>
                 <div class="col-sm-7">
                     <input type="text" class="form-control" id="inputCost">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputCar" class="col-sm-5 col-form-label">Cena/os:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputCar">
                 </div>
             </div>
             <div class="form-group row">
@@ -54,7 +51,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <input type="button" class="btn btn-success float-right" value="Přidat">
+                    <input type="button" class="btn btn-success float-right" value="Přidat" 
+                    onclick="passOfferValues()">
                 </div>
             </div>
         </form>

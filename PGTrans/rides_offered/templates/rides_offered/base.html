@@ -12,6 +12,8 @@
 
     <!-- Font Awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="{% static 'rides_offered/main.css' %}">
     {% if title %}
         <title> {{ title }}</title>
@@ -45,24 +47,7 @@
 </header>
 
 <main role="main" class="container">
-    <div class="row">
-        <div class="col-xs-9">
-            {% block content %}{% endblock %}
-        </div>
-        <div class="col-xs-3">
-            <div class="content-section">
-                <h3>Our Sidebar</h3>
-                <p class='text-muted'>You can put any information here you'd like.
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-light">Latest Posts</li>
-                    <li class="list-group-item list-group-item-light">Announcements</li>
-                    <li class="list-group-item list-group-item-light">Calendars</li>
-                    <li class="list-group-item list-group-item-light">etc</li>
-                </ul>
-                </p>
-            </div>
-        </div>
-    </div>
+    {% block content %}{% endblock %}
 </main>
 
 <!-- Bootstrap -->
@@ -79,18 +64,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
 <script>
+     $(document).ready(function () {
+        $('#datetimepicker1').datetimepicker({
+            locale: 'cs'
+        });
+    });
+
     $(document).ready(function () {
         $('#datetimepicker4').datetimepicker({
             format: 'L',
             locale: 'cs'
         });
     });
+
     $(document).ready(function () {
         $('#datetimepicker3').datetimepicker({
             format: 'LT',
             locale: 'cs'
         });
     });
+
+    function toggleOfferForm() {
+        var elem = document.getElementById("offer-form");
+        var btn = document.getElementById("toggleFormBtn");
+        if (elem.style.display === "block") {
+            elem.style.display = "none";
+            btn.value = "Nový vývoz";       
+            
+        } else {
+            elem.style.display = "block";            
+            btn.value = "Zrušit";
+        }
+    }
+
+    function passOfferValues() {
+        //passing the values
+        toggleOfferForm();
+    }
+
 </script>
 </body>
 
