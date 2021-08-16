@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-15T13:34:02.099Z" agent="5.0 (X11)" etag="l21PtCS0jjAzpd1LR4CI" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-16T15:52:09.915Z" agent="5.0 (X11)" etag="5IwDO9XytlJY28JHLMX1" version="14.9.6" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="1588" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1350" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -325,7 +325,7 @@
         <mxCell id="uPijHi-_BIHFcAgFWRh6-97" value="Telefon" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="uPijHi-_BIHFcAgFWRh6-95" vertex="1">
           <mxGeometry x="30" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uPijHi-_BIHFcAgFWRh6-142" value="Auto" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+        <mxCell id="uPijHi-_BIHFcAgFWRh6-142" value="Vozidlo" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="705" y="538" width="180" height="220" as="geometry" />
         </mxCell>
         <mxCell id="uPijHi-_BIHFcAgFWRh6-143" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uPijHi-_BIHFcAgFWRh6-142" vertex="1">
@@ -334,7 +334,7 @@
         <mxCell id="uPijHi-_BIHFcAgFWRh6-144" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" parent="uPijHi-_BIHFcAgFWRh6-143" vertex="1">
           <mxGeometry width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uPijHi-_BIHFcAgFWRh6-145" value="AutoID" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" parent="uPijHi-_BIHFcAgFWRh6-143" vertex="1">
+        <mxCell id="uPijHi-_BIHFcAgFWRh6-145" value="VozidloID" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" parent="uPijHi-_BIHFcAgFWRh6-143" vertex="1">
           <mxGeometry x="30" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uPijHi-_BIHFcAgFWRh6-146" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uPijHi-_BIHFcAgFWRh6-142" vertex="1">
