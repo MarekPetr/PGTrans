@@ -21,4 +21,4 @@ def home(request):
         'rides': rides,
         'title': 'Rides offered'
     }
-    return render(request, 'rides_offered/home.html', context)
+    return render(request, 'transport_reservations/home.html', context)

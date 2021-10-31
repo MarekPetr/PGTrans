@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rides_offered.apps.RidesOfferedConfig',
+    'transport_reservations.apps.TransportReservationsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djmoney',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'transport_reservations.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
